@@ -40,7 +40,7 @@ export default StyleSheet.create({
     borderRadius:8,
     backgroundColor:'#fff',
     marginBottom:16,
-    marginTop:48
+    marginTop:5  
   },
 
   heroTitle:{

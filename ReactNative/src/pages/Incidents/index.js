@@ -59,7 +59,7 @@ export default function Incidents() {
       <FlatList
         style={styles.incidentsList}
         keyExtractor={incident=> String(incident.id)}
-        showsVerticalScrollIndicator={false}
+        //showsVerticalScrollIndicator={false}
         onEndReached={loadIncidents}
         onEndReachedThreshold = {0.2}
         data={incidents}
@@ -69,7 +69,7 @@ export default function Incidents() {
             <Text style={styles.incidentValue}>{incident.name}</Text>
 
             <Text style={styles.incidentProperty}>CASO:</Text>
-            <Text style={styles.incidentValue}>{incident.caso}</Text>
+            <Text style={styles.incidentValue}>{incident.title}</Text>
 
             <Text style={styles.incidentProperty}>VALOR</Text>
             <Text style={styles.incidentValue}>
